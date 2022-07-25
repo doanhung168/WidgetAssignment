@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.BaseProject.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.BaseProject.AppWidgetContainer">
+
+    <TextView
+        android:layout_marginStart="@dimen/medium_dimens"
+        android:id="@+id/tvReminderTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@+id/imvAddReminder"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/imvAddReminder"
+        android:text="@string/reminder"
+        android:textSize="@dimen/medium_text_dimens" />
+
+    <ImageView
+        android:layout_marginEnd="@dimen/medium_dimens"
+        android:id="@+id/imvAddReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_add" />
+
+    <FrameLayout
+        style="@style/Widget.BaseProject.AppWidget.InnerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvReminderTitle"
+        android:layout_marginTop="@dimen/medium_dimens">
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:loopViews="true" />
+
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+</RelativeLayout>

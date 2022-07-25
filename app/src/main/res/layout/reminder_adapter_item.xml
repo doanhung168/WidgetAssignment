@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="@dimen/below_small_dimens"
+    app:cardElevation="@dimen/below_small_dimens">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_dimens">
+
+        <CheckBox
+            android:id="@+id/chkReminder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_dimens"
+            android:layout_marginTop="@dimen/small_dimens"
+            android:layout_marginEnd="@dimen/medium_dimens"
+            android:paddingStart="@dimen/medium_dimens"
+            android:textSize="@dimen/medium_text_dimens"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlSymmetry"
+            tools:text="CheckBox" />
+
+        <TextView
+            android:id="@+id/tvReminderTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/below_small_dimens"
+            android:paddingStart="@dimen/medium_dimens"
+            app:layout_constraintEnd_toEndOf="@+id/chkReminder"
+            app:layout_constraintStart_toStartOf="@+id/chkReminder"
+            app:layout_constraintTop_toBottomOf="@+id/chkReminder"
+            tools:ignore="RtlSymmetry" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootReminder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="#00BCD4"
+        android:paddingStart="@dimen/medium_dimens"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_text_dimens"
+        tools:ignore="RtlSymmetry"
+        tools:text="CheckBox" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:paddingStart="@dimen/medium_dimens"
+        android:id="@+id/tvReminderTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox"
+        tools:text="12-08-2000 12:00"
+        tools:ignore="RtlSymmetry" />
+
+</RelativeLayout>

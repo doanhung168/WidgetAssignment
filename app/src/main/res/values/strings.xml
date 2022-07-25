@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Widget Assignment</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="reminder">Reminder</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_your_remind">Enter your remind</string>
+    <string name="save">Save</string>
+    <string name="remind_empty_message">Please, Enter your remind</string>
+    <string name="time_empty_message">Please, Choose time your remind</string>
+    <string name="reminder_list">Reminder List</string>
+    <string name="delete_task_completely">Delete Task Completely</string>
+    <string name="error_message">An error occur</string>
+    <string name="choose_time">Choose Time</string>
+</resources>
